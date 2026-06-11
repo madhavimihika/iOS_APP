@@ -10,13 +10,23 @@ struct ContentView: View {
         .autoconnect()
 
     var body: some View {
-        VStack(spacing: 40) {//layout
-
+        VStack(spacing: 10) {//layout
+//                Image("ss")
+//                    .resizable()
+//                    .scaledToFit()
+            //            }
+            
+            ZStack{
+                Image("ss")
+//                   .resizable()
+                    .scaledToFill()
+                    .ignoresSafeArea()
+                
+            }
             Text("Time: \(timeRemaining)s")//timer
                 .font(.largeTitle)
                 .fontWeight(.bold)
 
-            
 
             Button(action: {
                 if gameActive {
