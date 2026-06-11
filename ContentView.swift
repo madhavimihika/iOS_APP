@@ -18,7 +18,7 @@ struct ContentView: View {
             
             ZStack{
                 Image("ss")
-//                   .resizable()
+//                   .resizable()ß
                     .scaledToFill()
                     .ignoresSafeArea()
                 
@@ -27,7 +27,7 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.bold)
 
-
+//game active button
             Button(action: {
                 if gameActive {
                     score += 1// score increase
@@ -75,3 +75,11 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+//test
+//let s1 = "Hello"
+//let s2 = "Swift"
+//print(s1 + " " + s2)
+//print("\(s1), \(s2)!")
+//let word = "Swift"
+//print(word.count)
+//print(s1.isEmpty)
