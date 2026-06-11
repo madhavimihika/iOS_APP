@@ -37,18 +37,18 @@ struct ContentView: View {
                     .fill(Color.red)
                     .frame(width: 500, height: 300)
                     .overlay(
-                        Text("Hit Me")
+                        Text("Hit Me")//button inside name text
                             .font(.title)
-                            .foregroundColor(.yellow)
+                            .foregroundColor(.yellow)//font colkor set to yellow
                             .bold()
                     )
             }
-            Text("Score: \(score)")
+            Text("Score: \(score)")//Score box
                 .font(.title)
                 .bold()
             
             Button(gameActive ? "Playing" : "Start Game") {
-                startGame()
+                startGame()//start game button
                     
             }
             .disabled(gameActive)
