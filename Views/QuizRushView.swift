@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-// MARK: - Main Quiz Rush View
+// Main Quiz Rush View
 struct QuizRushView: View {
     @StateObject private var viewModel = TriviaViewModel()
     @Environment(\.dismiss) private var dismiss
@@ -88,7 +88,7 @@ struct QuizRushView: View {
     }
 }
 
-// MARK: - Welcome View
+// Welcome View
 struct WelcomeView: View {
     @ObservedObject var viewModel: TriviaViewModel
     
@@ -127,7 +127,7 @@ struct WelcomeView: View {
     }
 }
 
-// MARK: - Loading View
+// Loading View
 struct LoadingView: View {
     @State private var rotation: Double = 0
     
@@ -168,7 +168,7 @@ struct LoadingView: View {
     }
 }
 
-// MARK: - Question View
+// Question View
 struct QuestionView: View {
     @ObservedObject var viewModel: TriviaViewModel
     let question: Question
