@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+*.swp
+
+# Xcode user data
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+
+# Build products (this blocks the compiled app)
+build/
+DerivedData/
+*.app
+*.ipa
+*.dSYM
+*.dSYM.zip
+iOS_APP/          # Prevents committing the compiled app folder
+iOS_APP           # Prevents committing the compiled app binary
+
+# Xcode project user data
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# CocoaPods
+Pods/
+Podfile.lock
